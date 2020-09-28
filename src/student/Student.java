@@ -1,10 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package student;
 
+public class Student {
+    //Always start with instance variables
+    //these make up the properties of your object
+    //always make them private because...
     private String name;
     private int test1;
     private int test2;
@@ -24,13 +23,24 @@ package student;
         this.test1 = test1;
         this.test2 = test2;
         this.test3 = test3;
+        //this. refers to the property and is needed if the parameters are the same name as the properties
     }
+    //when you have multiple student constructers yiu can chain them
+    //chaining constructors -> calling a constructor from within another constructor
+    //saves a bit of time and code
     public Student(){
         this("",0,0,0);
     }
     public Student(Student other){
         this(other.name,other.test1,other.test2,other.test3);
     }
+    //public Student(Student other){
+     //   this.name = other.name;
+     //   test1 = other.test1;
+      //  test2 = other.test2;
+      //  test3 = other.test3;
+   // }
+    //Other methods and abilities for your object
     public void setName(String n){
         name = n;
     }
@@ -60,3 +70,5 @@ package student;
     }
     
 }
+
+    
