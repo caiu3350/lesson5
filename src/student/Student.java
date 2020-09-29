@@ -68,6 +68,11 @@ public class Student {
         high = Math.max(high, test3);
         return high;
     }
+    public String toString(){
+        String str;
+        str = "Name:    "+name+"\n"+"Test 1:  "+test1+"\n"+"Test 2:  "+test2+"\n"+"Test 3:  "+test3+"\n"+"Average:  "+getAverage();
+        return str;
+    }
     
 }
 
